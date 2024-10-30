@@ -1,0 +1,302 @@
+.menuVoice {color: black; text-decoration: none;}
+.menuVoice:hover {color: #922981; text-decoration: underline;}
+
+
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url("../assets/img/autumn.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    border-radius: 0 0 25px 25px;
+}
+header.masthead:before {
+    content: "";
+    position: absolute;
+    background-color: #1c375e;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border-radius: 0 0 25px 25px;
+}
+header.masthead h1, header.masthead .h1 {
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3rem;
+    }
+}
+header.masthead2 {
+    position: relative;
+    background-color: #343a40;
+    background: url("../assets/img/vallegialla.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    border-radius: 0 0 25px 25px;
+}
+header.masthead3 {
+    position: relative;
+    background-color: #343a40;
+    background: url("../assets/img/autumn.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    border-radius: 0 0 25px 25px;
+}
+header.masthead4 {
+    position: relative;
+    background-color: #343a40;
+    background: url("../assets/img/conneve.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    border-radius: 0 0 25px 25px;
+}
+
+
+header.masthead2:before, header.masthead3:before, header.masthead4:before   {
+    content: "";
+    position: absolute;
+    background-color: #1c375e;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    border-radius: 0 0 25px 25px;
+}
+header.masthead2 h1, header.masthead2 .h1, header.masthead3 h1, header.masthead3 .h1, header.masthead4 h1, header.masthead4 .h1  {
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    header.masthead2, header.masthead3, header.masthead4 {
+      padding-top: 6.7rem;
+      padding-bottom: 6.7rem;
+    }
+    header.masthead2 h1, header.masthead2 .h1, header.masthead3 h1, header.masthead3 .h1 ,header.masthead4 h1, header.masthead4 .h1  {
+      font-size: 3rem;
+    }
+}
+
+#coverDesc {
+    text-transform: lowercase;
+}
+  
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    border-radius: 25px 0 0 25px;
+}
+.showcase .showcase-img2 {
+    min-height: 30rem;
+    background-size: cover;
+    border-radius: 0 25px 25px 0;
+}
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+}
+
+.offcanvas {
+    height: 100lvh !important;
+    border-radius: 20px 0 0 20px;
+}
+
+.features-icons {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+  
+  
+.coverTit {
+    font-size: 6.2lvh !important;
+    text-align: left;
+}
+
+
+
+/*
+schedule*/
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+    position: relative;
+  }
+  
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+content: "";
+position: absolute;
+width: 3px;
+background-color: #aa2a95;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+position: relative;
+background-color: inherit;
+width: 50%;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+.card-body h4 {
+    margin: 0;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+content: "";
+position: absolute;
+width: 25px;
+height: 25px;
+right: -11px;
+background-color: #aa2a95;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+padding: 0px 40px 20px 0px;
+left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+padding: 0px 0px 20px 40px;
+left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+right: 30px;
+border: medium solid white;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+.main-timeline-2::after {
+    left: 31px;
+}
+
+/* Full-width containers */
+.timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+.left-2::after,
+.right-2::after {
+    left: 18px;
+}
+
+.left-2::before {
+    right: auto;
+}
+
+/* Make all right containers behave like the left ones */
+.right-2 {
+    left: 0%;
+}
+}
+/* schedule */
+
+
+
+.call-to-action {
+    position: relative;
+    background: url("../assets/img/lago2.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.call-to-action:before {
+    content: "";
+    position: absolute;
+    background-color: #5e5b1c;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+  
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+#loghiProg {
+    height: 40px;
+}
+#footerInfo {
+    margin: 20px;
+}
+#footerInfo p{
+    margin: 0;
+}
+#footerInfo a{
+    color: rgb(241, 241, 7);
+}
