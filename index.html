@@ -18,56 +18,40 @@
         <link href="css/stile.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Navigation-->
-        <!-- <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#!">
-                    <img style="height: 50px;" src="./assets/logoMec-ex.png" alt="">
-                </a>
-
-                <div class="d-flex gap-2">
-                    <a class="menuVoice" href="#signup">Home</a>
-                    <a class="menuVoice" href="#signup">Chi siamo</a>
-                </div>
-            </div>
-        </nav> -->
+      
         <nav class="navbar fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img id="mainLogo" style="height: 50px; margin-left: 100px;" src="./assets/logoMex-exwhite.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <a class="navbar-brand" href="index.html">
+                    <img id="mainLogo" style="height: 50px; margin-left: 100px;" src="./assets/logoMex-exwhite.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./spring.html">Spring Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./autumn.html">Autumn Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./winter.html">Winter Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="contattiBut" onclick="closeMenu();" class="nav-link" href="#contatti">Contatti</a>
+                            </li>
+                        </ul>
                  
-                </div>
+                    </div>
               </div>
             </div>
         </nav>
@@ -76,9 +60,9 @@
             <div class="container position-relative">
                 <div class="row justify-content-left">
                     <div class="col-xl-6">
-                        <div class="text-left text-white">
+                        <div id="coverTexts" class="text-left text-white">
                             <!-- Page heading-->
-                            <span>
+                            <span >
                                 <h1 class="mb-1 coverTit">Un’esperienza da vivere tutto l’anno!</h1>
                                 <p id="coverDesc">VI PROPONIAMO TRE ITINERARI ESPERENZIALI DELLA DURATA DI TRE NOTTI (QUATTRO GIORNI) IN TRE DIVERSI PERIODI DELL’ANNO ALL’INSEGNA DELLA NATURA, DELL’ENOGASTRONOMIA, DEL BENESSERE E DEL RELAX.</p>
                             </span>
@@ -138,7 +122,7 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('./assets/img/conneve.jpeg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('./assets/img/conneve.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2>Winter Experience</h2>
                         <p class="lead mb-0">Scopri il fascino invernale di Rende e delle sue montagne, con visite ai castelli imbiancati e ai musei, e vivi la magia della neve a Camigliatello.</p>
@@ -180,44 +164,10 @@
         <!-- Call to Action-->
         <section class="call-to-action text-white text-center" id="signup">
             <div class="container position-relative">
+                <span id="bordiBianco"></span>
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Pronto a partire? Iscriviti ora!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
+                        <h2 class="mb-4">Pronto a partire? Prenota ora!</h2>
                     </div>
                 </div>
             </div>
@@ -226,7 +176,8 @@
         <!-- Remove the container if you want to extend the Footer to full width. -->
 
             <!-- Footer -->
-            <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+            <footer id="contatti" class="text-center text-lg-start text-white" style="background-color: #434025">
+                <div id="spazioBordi"></div>
                 <!-- Grid container -->
                 <div class="container p-4 pb-0">
                     <!-- Section: Links -->
@@ -235,7 +186,7 @@
                         <div class="row">
                             <!-- Grid column -->
                             <div id="footerInfo" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <img class="mb-3" height="40px" src="/assets/logoMec-ex.png" alt="">
+                                <img class="mb-3" height="40px" src="./assets/logoMex-exwhite.png" alt="">
                                 <p><i class="fas fa-home mr-3"></i> Via Beato Francesco Marino, 87040 Zona Industriale Menna CS, Italia</p>
                                 <span>
                                     <i class="bi bi-envelope"></i>
@@ -267,7 +218,7 @@
 
                             <!-- Grid column -->
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <img id="loghiProg" src="/assets/loghi-progetto.png" alt="loghi progetto Mec experience">
+                                <img id="loghiProg" src="./assets/loghi-progetto.png" alt="loghi progetto Mec experience">
                             </div>
 
                         </div>
@@ -295,6 +246,6 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>

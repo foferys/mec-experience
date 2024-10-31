@@ -33,27 +33,23 @@
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./spring.html">Spring Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./autumn.html">Autumn Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./winter.html">Winter Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contattiBut" onclick="closeMenu();" class="nav-link" href="#contatti">Contatti</a>
+                        </li>
+                    </ul>
                  
                 </div>
               </div>
@@ -64,7 +60,7 @@
             <div class="container position-relative">
                 <div class="row justify-content-left">
                     <div class="col-xl-6">
-                        <div class="text-left text-white">
+                        <div id="coverTexts" class="text-left text-white">
                             <!-- Page heading-->
                             <span>
                                 <h1 class="mb-1 coverTit">Spring Experience</h1>
@@ -82,7 +78,7 @@
               <div class="main-timeline-2">
                 <div class="timeline-2 left-2">
                   <div class="card">
-                    <img src="./assets/img/cover-sila.jpg" class="card-img-top" alt="Responsive image">
+                    <img src="./assets/img/Rende-castello.jpg" class="card-img-top" alt="Responsive image">
 
                     <div class="card-body p-4">
                         <h4 class="fw-bold mb-1">Primo giorno</h4>
@@ -122,7 +118,7 @@
 
                 <div class="timeline-2 right-2">
                   <div class="card">
-                    <img src="/assets/img/sila piccola cz  31.jpg" class="card-img-top" alt="Responsive image">
+                    <img src="./assets/img/camigl-Tenuta-Del-Travale.jpg" class="card-img-top" alt="Responsive image">
                     <div class="card-body p-4">
                         <h4 class="fw-bold mb-1">Secondo giorno</h4>
                         <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>Sabato</p>
@@ -160,7 +156,7 @@
 
                 <div class="timeline-2 left-2">
                   <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(131).webp" class="card-img-top"
+                    <img src="./assets/img/rist-giganti.jpg" class="card-img-top"
                       alt="Responsive image">
                     <div class="card-body p-4">
                         <h4 class="fw-bold mb-1">Terzo</h4>
@@ -199,7 +195,7 @@
 
                 <div class="timeline-2 right-2">
                   <div class="card">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"
+                    <img src="./assets/img/abbazia.jpg" class="card-img-top"
                       alt="Responsive image">
                     <div class="card-body p-4">
                         <h4 class="fw-bold mb-1">Quarto giorno</h4>
@@ -233,7 +229,9 @@
         
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+        <footer id="contatti" class="text-center text-lg-start text-white" style="background-color: #434025">
+            <div id="spazioBordi"></div>
+
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
@@ -242,7 +240,7 @@
                     <div class="row">
                         <!-- Grid column -->
                         <div id="footerInfo" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <img class="mb-3" height="40px" src="/assets/logoMec-ex.png" alt="">
+                            <img class="mb-3" height="40px" src="./assets/logoMex-exwhite.png" alt="">
                             <p><i class="fas fa-home mr-3"></i> Via Beato Francesco Marino, 87040 Zona Industriale Menna CS, Italia</p>
                             <span>
                                 <i class="bi bi-envelope"></i>
@@ -252,7 +250,7 @@
                                 <i class="bi bi-telephone-fill"></i>
                                 <a href="tel:340 240 5564">340 240 5564</a>
                             </span>
-                    
+                      
                         </div>
 
                         <hr class="w-100 clearfix d-md-none" />
@@ -274,7 +272,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <img id="loghiProg" src="/assets/loghi-progetto.png" alt="loghi progetto Mec experience">
+                            <img id="loghiProg" src="./assets/loghi-progetto.png" alt="loghi progetto Mec experience">
                         </div>
 
                     </div>
