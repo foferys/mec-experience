@@ -16,6 +16,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/stile.css" rel="stylesheet" />
+        <meta name="theme-color" content="#434025"/>
+        <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="MEC Experience">
     </head>
     <body>
       
@@ -247,5 +253,18 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(registration => {
+                            console.log('ServiceWorker registrato con successo:', registration.scope);
+                        })
+                        .catch(error => {
+                            console.log('Registrazione ServiceWorker fallita:', error);
+                        });
+                });
+            }
+        </script>
     </body>
 </html>
