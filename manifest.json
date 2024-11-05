@@ -1,6 +1,6 @@
 {
   "name": "MEC Experience",
-  "short_name": "MEC",
+  "short_name": "MEC Experience",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#434025",
